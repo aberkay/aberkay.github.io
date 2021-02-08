@@ -1,0 +1,84 @@
+body{
+  background-image: url(background.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+header{
+  font-family: Helvetica;
+  color: white;
+  text-shadow: 0.1vw 0 blue;
+  margin: 0vw 0vw 0vw 8vw;
+}
+#name{
+  padding-left: 0vw;
+  font-size: 1.8vw;
+}
+#school{
+  padding-left: 2vw;
+  font-size: 0.9vw;
+}
+#dep{
+  margin-left: 2.3vw;
+  padding-left: 0.5vw;
+  font-size: 0.9vw;
+}
+nav{
+  color: white;
+  float: right; 
+  margin: -2vw 13vw 1vw 1vw;
+  font-size: 1.1vw;
+}
+nav a{
+  padding-left: 2vw;
+}
+main{
+  height: 30vw;
+  width: 80vw;
+  margin: 0.5vw 0vw 0vw 5.5vw;
+  padding: 3vw 3vw 3vw 3vw;
+  font-family: "Trebuchet MS", Verdana, sans-serif;
+  font-size: 0.8vw;
+  color: black;
+  overflow: scroll;
+  overflow-x: hidden;
+  position: relative;
+}
+main:before{
+  content: "";
+  position: fixed;
+  margin: -3vw 0vw 0vw -3vw; 
+  height: 36vw;
+  width: 86vw;
+  background-image: url(background2.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  opacity: 0.8;
+  filter: alpha(opacity=80); /* For IE8 and earlier */
+  -moz-opacity: 0.8;
+  -khtml-opacity: 0.8;
+  z-index: -1;
+}
+main a:link, a:visited{
+  color: black;
+}
+#homepage{
+  display: inline-block;
+}
+#writingspage,#librarypage,#cvpage,#alsopage,#projectspage,#talkspage{
+  display: none;
+}
+.pic{
+  height: 17vw;
+}
+footer{
+  color: white;
+  margin: 0vw 13vw 0vw 5.5vw;
+  text-shadow: 0.2vw 0 blue;
+  font-size: 1vw;
+  height: 2vw; 
+  width: 86vw;
+}
+footer a{
+  float: right;
+  margin: 0vw 5vw 0vw 0vw;
+}
