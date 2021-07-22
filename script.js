@@ -31,6 +31,15 @@ $(document).ready(function(){
 		$temp.val(email_()).select();
 		document.execCommand("copy");
 		$temp.remove();
+		$("#alerter").text("e-mail copied to clipboard").fadeIn(250).delay(1500).fadeOut(250);
+	});
+	$(".copy-paste-symbol").mouseenter(function(){
+		$("body").css('cursor','pointer');
+
+	});
+	$(".copy-paste-symbol").mouseleave(function(){
+		$("body").css('cursor','');
+		
 	});
 
 })
