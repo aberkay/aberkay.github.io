@@ -10,6 +10,16 @@
 <script type='text/javascript' src='script.js'></script>
 <style>
 html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
+
+/* Mobile: make the avatar smaller */
+@media (max-width: 600px) {
+  .avatar-img{
+    width: 100%;
+    max-height: 260px;      /* bunu 180-320 arası deneyebilirsin */
+    object-fit: cover;      /* kırpar, orantıyı bozmadan küçültür */
+    object-position: center 25%;
+  }
+}
 </style>
 <body class="w3-light-grey">
 
@@ -24,7 +34,7 @@ html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
 
       <div class="w3-white w3-text-grey w3-card-4">
         <div class="w3-display-container">
-          <img src="pic.png" style="width:100%" alt="Avatar">
+          <img src="pic.png" class="avatar-img" style="width:100%" alt="Avatar">
           <div class="w3-display-bottomleft w3-container w3-text-white">
             <h2>berkay kebeci</h2>
           </div>
@@ -36,7 +46,8 @@ html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
           <!-- <p><a class="email"> </a> &nbsp; <img src="copy-paste-symbol.png" class="copy-paste-symbol" title="click to copy e-mail adress" style="width:4%"> &nbsp; <a id="alerter"> </a></p> -->
           <p><a class="email2"> </a> &nbsp; <img src="copy-paste-symbol.png" class="copy-paste-symbol2" title="click to copy e-mail adress" style="width:4%"> &nbsp; <a id="alerter2"> </a></p>
           <hr>
-
+          <p><img src="aws.svg" alt="AWS logo" style="width:18px"> <a href="https://arithmeticwinter.github.io/", target="_blank">arithmetic winter school </a></p>
+          <hr>
           <p class="w3-large w3-text-theme"><b><i class="fa fa-glass fa-fw w3-margin-right w3-text-cyan"></i>research interests</b></p>
           <p>algebraic geometry</p>
           <p>motivic cohomology</p>
